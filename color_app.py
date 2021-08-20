@@ -30,7 +30,7 @@ def main():
         st.set_page_config(layout="wide", page_title="计算机配色")
         st.write('\n')
         st.write("结果展示")
-        test = st.beta_columns(4)
+        test = st.columns(4)
         for i in range(4):
                 test[i].text("染料"+str(i+1)+"浓度")
         st.write("\n\n\n")
@@ -39,7 +39,7 @@ def main():
         st.sidebar.title("标准配方k/s值")
         zz = st.sidebar.form("计算")
         zz.write("最初解")
-        three_dist = st.sidebar.beta_columns(3)
+        three_dist = st.sidebar.columns(3)
         d_x = three_dist[0].form("D_x")
         d_y = three_dist[1].form("D_y")
         d_z = three_dist[2].form("D_z")
@@ -57,7 +57,7 @@ def main():
         # Disabling warning
         st.set_option('deprecation.showfileUploaderEncoding', False)
 
-        k_s_number = [st.beta_columns(7) for _ in range(number)]
+        k_s_number = [st.columns(7) for _ in range(number)]
 
         for i in range(number):
                 for j in range(7):
