@@ -30,13 +30,6 @@ def main():
         # Wide mode
         st.set_page_config(layout="wide", page_title="计算机配色")
         st.write('\n')
-
-        # Everything is accessible via the st.secrets dict:
-
-        st.write("DB username:", st.secrets["db_username"])
-        st.write("DB password:", st.secrets["db_password"])
-
-
         st.write("结果展示")
         test = st.columns(4)
         for i in range(4):
