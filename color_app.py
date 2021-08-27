@@ -71,7 +71,7 @@ def main():
                         elif j == 6:
                                 temp[i][j].write('波长' + str(len) + '    \n配方')
                         else:
-                                temp[i][j].write('波长'+str(len)+'    \n染料'+str(j))
+                                temp[i][j].write('波长'+str(len)+'    \n染料'+str(j)+'单浓')
                         input_k_s[i][j] = temp[i][j].text_input('k/s')
                         if temp[i][j].form_submit_button("确认") and input_k_s[i][j]:
                                 if j == 0:
